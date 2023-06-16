@@ -1,13 +1,16 @@
 - name: Perform update
+  hosts: all
   apt:
     update_cache: true
 
 - name: Install cowsay
+  hosts: all
   apt:
     name: cowsay
     state: present
 
 - name: Install lolcat
+  hosts: all
   apt:
     name: lolcat
     state: present
