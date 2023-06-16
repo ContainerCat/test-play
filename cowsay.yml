@@ -1,0 +1,13 @@
+- name: Perform update
+  apt:
+    update_cache: true
+
+- name: Install cowsay
+  apt:
+    name: cowsay
+    state: present
+
+- name: Install lolcat
+  apt:
+    name: lolcat
+    state: present
